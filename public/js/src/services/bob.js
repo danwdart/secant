@@ -2,10 +2,12 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class BobService {
+    this_is_bob = 1;
+    
     getBob() {
-        return [{
+        return Promise.resolve([{
             id: 1,
             name: 'Bob'
-        }];
+        }]);
     }
 }

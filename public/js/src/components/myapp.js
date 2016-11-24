@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, OpaqueToken } from '@angular/core';
 import { Person } from '../model/person';
 import { BobService } from '../services/bob';
 
@@ -9,22 +9,19 @@ import { BobService } from '../services/bob';
   <input [(ngModel)]="person.name" placeholder="name">
   <my-buttons [foo]="person.name"></my-buttons>
   `,
-  services: [BobService],
+  providers: [BobService],
   styles: [`body {}`]
 })
-//@Inject(BobService)
-//@Implement(OnInit)
 export class AppComponent {
-    constructor(
-        @Inject(BobService)
-        bob
-    ) {
-        console.log('bob', bob);
+    constructor(bob) {
+        this.bob = bob;
     }
+    
+    static parameters = [[BobService]];
     
     ngOnInit() {
         console.log('OnInit');
-        console.log(this)
+        this.bob.getBob().then((result) => console.log(result));
     }
     
     person = new Person();
