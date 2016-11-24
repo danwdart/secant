@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Person } from '../model/person';
 import { BobService } from '../services/bob';
 
@@ -9,14 +9,22 @@ import { BobService } from '../services/bob';
   <input [(ngModel)]="person.name" placeholder="name">
   <my-buttons [foo]="person.name"></my-buttons>
   `,
+  services: [BobService],
   styles: [`body {}`]
 })
+//@Inject(BobService)
+//@Implement(OnInit)
 export class AppComponent {
     constructor(
         @Inject(BobService)
         bob
     ) {
-        this.bob = bob;
+        console.log('bob', bob);
+    }
+    
+    ngOnInit() {
+        console.log('OnInit');
+        console.log(this)
     }
     
     person = new Person();
