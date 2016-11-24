@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-ajaxey',
-  template: ``,
+  templateUrl: `/js/src/components/ajaxey/index.html`,
   styles: [`body {}`]
 })
 export class AjaxeyComponent {

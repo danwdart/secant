@@ -2,11 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'my-buttons',
-  template: `
-  <h3>Hello... input was {{ foo }}</h3>
-  <h2 *ngIf="selectedItem">Item is {{ selectedItem }}</h2>
-  <ul *ngFor="let item of array"><li><button [class.selected]="item == selectedItem" (click)="onClick(item)">{{ item }}</button></li></ul>
-  `,
+  templateUrl: `/js/src/components/buttons/index.html`,
   styles: [`body {}`]
 })
 export class ButtonsComponent {

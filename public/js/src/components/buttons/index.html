@@ -1,0 +1,3 @@
+<h3>Hello... input was {{ foo }}</h3>
+<h2 *ngIf="selectedItem">Item is {{ selectedItem }}</h2>
+<ul *ngFor="let item of array"><li><button [class.selected]="item == selectedItem" (click)="onClick(item)">{{ item }}</button></li></ul>
