@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d app && webpack --progress --colors",
-    "start": "babel src -d app && node --harmony app/server.js & webpack --progress --colors --watch"
+    "start": "babel src -d app && node --harmony app/server.js & webpack --progress --colors --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -45,6 +47,8 @@
     "express": "^4.14.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "5.5.6",
-    "zone.js": "^0.8.20"
-  }
+    "zone.js": "^0.8.20",
+    "snyk": "^1.69.3"
+  },
+  "snyk": true
 }
