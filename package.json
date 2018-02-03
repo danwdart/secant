@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kathiedart/secant.git"
+    "url": "git+https://github.com/danwdart/secant.git"
   },
-  "author": "Kathie Dart <npm@kathiedart.uk>",
+  "author": "Dan Dart <npm@dandart.co.uk>",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/kathiedart/secant/issues"
+    "url": "https://github.com/danwdart/secant/issues"
   },
-  "homepage": "https://github.com/kathiedart/secant#readme",
+  "homepage": "https://github.com/danwdart/secant#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
