@@ -31,15 +31,15 @@
     "webpack": "^5.9.0"
   },
   "dependencies": {
-    "@angular/common": "^11.0.2",
-    "@angular/compiler": "^11.0.2",
-    "@angular/core": "^11.0.2",
-    "@angular/forms": "^11.0.2",
+    "@angular/common": "^11.1.0-next.1",
+    "@angular/compiler": "^11.1.0-next.1",
+    "@angular/core": "^11.1.0-next.1",
+    "@angular/forms": "^11.1.0-next.1",
     "@angular/http": "^7.2.16",
-    "@angular/platform-browser": "^11.0.2",
-    "@angular/platform-browser-dynamic": "^11.0.2",
-    "@angular/router": "^11.0.2",
-    "@angular/upgrade": "^11.0.2",
+    "@angular/platform-browser": "^11.1.0-next.1",
+    "@angular/platform-browser-dynamic": "^11.1.0-next.1",
+    "@angular/router": "^11.1.0-next.1",
+    "@angular/upgrade": "^11.1.0-next.1",
     "angular-in-memory-web-api": "^0.11.0",
     "body-parser": "^1.19.0",
     "client-sessions": "^0.8.0",
@@ -47,7 +47,7 @@
     "express": "^5.0.0-alpha.8",
     "reflect-metadata": "^0.1.13",
     "rxjs": "7.0.0-beta.8",
-    "snyk": "^1.431.2",
+    "snyk": "^1.433.0",
     "zone.js": "^0.11.3"
   },
   "snyk": true
