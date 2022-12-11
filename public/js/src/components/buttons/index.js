@@ -7,11 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonsComponent {
     array = [1,2,3,4,5];
-    
+
     @Input()
     foo = null;
-    
+
     selectedItem = null;
-    
+
     onClick(item) { console.log(item); this.selectedItem = item; }
 }

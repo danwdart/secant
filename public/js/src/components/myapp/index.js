@@ -12,14 +12,14 @@ export class AppComponent {
     constructor(bob) {
         this.bob = bob;
     }
-    
+
     static parameters = [[BobService]];
-    
+
     ngOnInit() {
         console.log('OnInit');
         this.bob.getBob().then((result) => console.log(result));
     }
-    
+
     person = new Person();
     bar = 'barry';
 }
